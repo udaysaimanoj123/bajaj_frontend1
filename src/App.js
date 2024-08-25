@@ -18,7 +18,7 @@ function App() {
     e.preventDefault();
     try {
       const parsedData = JSON.parse(jsonData);
-      const res = await axios.post('http://localhost:3000/bfhl', { data: parsedData.data });
+      const res = await axios.post('https://bajajfinserv1.onrender.com/bfhl', { data: parsedData.data });
       setResponse(res.data);
       setError('');
     } catch (err) {
